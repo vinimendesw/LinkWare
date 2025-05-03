@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkWare</title>
+    <link rel="stylesheet" href="style-paginainicial.css">
+</head>
+<body>
+    <header>
+        <h1>LinkWare</h1>
+        <input type="text" id="search" placeholder="Pesquisar produtos...">
+        <button onclick="searchProducts()">Buscar</button>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Produtos</h2>
+            <div class="product">
+                <a href="pagina-teste.html">
+                    <img src="imagens/impressora.jpg" alt="Impressora XYZ">
+                    <h3>Impressora XYZ</h3>
+                    <p>Alta performance e conectividade.</p>
+                </a>
+            </div>
+            <div class="product">
+                <img src="imagens/notebook.jpg" alt="Notebook ABC">
+                <h3>Notebook ABC</h3>
+                <p>Potência e mobilidade para seu dia.</p>
+            </div>
+            <div class="product">
+                <img src="imagens/fone-de-fio.jpg" alt="Fone com Fio">
+                <h3>Fone com Fio</h3>
+                <p>Áudio nítido com conforto prolongado.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function searchProducts() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const products = document.querySelectorAll('.product');
+            products.forEach(product => {
+                const title = product.querySelector('h3').innerText.toLowerCase();
+                product.style.display = title.includes(query) ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

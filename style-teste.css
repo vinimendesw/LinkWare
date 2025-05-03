@@ -1,0 +1,84 @@
+/* styleimpressora.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header .voltar {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-detail img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.related-products h2 {
+    margin-bottom: 20px;
+}
+
+.related-products {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.related-products .product {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 10px;
+}
+
+.related-products .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.related-products .product h3 {
+    font-size: 14px;
+    color: #333;
+}
